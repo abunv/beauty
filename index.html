@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>Beauty Landing Page</title>
 </head>
 <body>
-    <header class="header d-flex">
+    <!-- HEADER -->
+    <header class="header d-flex align-items-center">
         <ul class="header__menu d-flex">
             <li><a href="#">Home</a></li>
             <li><a href="#">Product</a></li>
@@ -24,13 +26,28 @@
                     <ion-icon name="search-sharp"></ion-icon>
                     <input type="text" placeholder="search">
                 </button>
-                <button class="header__card">
-                    <ion-icon name="bag-handle-sharp"></ion-icon>
-                </button>
-                <button class="btn"> Sign In</button>
             </form>
+            <button class="header__cart">
+                    <ion-icon name="bag-handle-sharp" class="icon"></ion-icon>
+            </button>
+            <button class="btn"> Sign In</button>
         </div>
     </header>
+     <!-- /HEADER -->
+
+    <section class="welcome">
+        <div class="container">
+            <div class="col-6">
+                <h1>Because you deserve better</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis asperiores, magni voluptatibus minima voluptatum doloribus at dolor aspernatur 
+                </p>
+                <a href="" class="btn">Shop now</a>
+            </div>
+        </div>
+        <div class="welcome__bg" style="background-image: url(./img/samsung.jpg);"></div>
+    </section>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
 </body>

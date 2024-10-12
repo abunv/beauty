@@ -16,6 +16,7 @@ body {
 }
 
 .container {
+
     max-width: 1140px;
     margin: auto;
 }
@@ -39,7 +40,8 @@ h1 {
     font-size: 64px;
     letter-spacing: 0.2px;
     margin-bottom: 22px;
-    font-family: 'arvo' serif;
+    font-family: 'arvo', serif;
+    font-weight: 500;
 }
 
 .title {
@@ -50,6 +52,7 @@ h1 {
 p {
     font-size: 20px;
     margin-bottom: 32px;
+    line-height: 36px;
 }
 
 .btn {
@@ -81,18 +84,65 @@ p {
 
 a {
     color: #273732;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input:focus {
+    outline: unset;
 }
 
 /* HEADER */
 .header {
-    padding: 0px 32px;
+    padding: 20px 32px;
+    justify-content: space-between;
 }
 
+.header__menu a:hover {
+    text-decoration: underline;
+    color: var(--green);
+}
 .header__menu a {
     padding: 6px 8px;
     margin: 0px 13px;
     display: inline-block;
     font-size: 16px;
+}
+
+.header .btn {
+    font-size: 14px;
+}
+
+.header__cart {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--green);
+    margin: 0px 16px;
+    background: unset;   
+}
+
+.header__cart:hover {
+    background-color: var(--dgreen);
+    cursor: pointer;
+    color: #fff;
+}
+
+.header__cart .icon {
+    color: var(--green);
+}
+.header__cart .icon:hover {
+    color: #fff;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--green);
+    letter-spacing: 0.8px;
 }
 
 .header__form {
@@ -101,10 +151,49 @@ a {
     display: flex;
     align-items: center;
     width: 260px;
+    padding: 12px 20px;
+    overflow: hidden;
 }
 
 .header__form input {
     border: 0;
     flex: 1;
+    background: unset;
+    margin-left: 10px;
+    font-size: 14px;
 }
 
+.header__form button {
+    border: 0;
+    background: unset;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* WELCOME */
+
+.welcome {
+    height: 664px;
+    position: relative;
+}
+
+.welcome .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.welcome__bg {
+    position: absolute;
+    height: 100%;
+    width: 50vw;
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    right: 0;
+
+}
